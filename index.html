@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Checkout Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1 class="header__title">Checkout</h1>
+      </header>
+      <main class="main">
+        <div class="item__container">
+          <div class="item">
+            <div class="item__image">
+              <img src="./photo1.png" alt="bag" />
+            </div>
+            <div class="item__desc">
+              <div class="item__desc__title">
+                <h4>Vintage Back bag</h4>
+                <h5>$54.99 <span>$94.99</span></h5>
+              </div>
+              <div class="item__desc__count">
+                <button class="button button--sub">-</button>
+                <h2>1</h2>
+                <button class="button button--add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__image">
+              <img src="./photo2.png" alt="shoes" />
+            </div>
+            <div class="item__desc">
+              <div class="item__desc__title">
+                <h4>Levi Shoes</h4>
+                <h5>$74.99 <span>$124.99</span></h5>
+              </div>
+              <div class="item__desc__count">
+                <button class="button button--sub">-</button>
+                <h2>1</h2>
+                <button class="button button--add">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="amount__container">
+            <div class="amount">
+              <h3>Shipping</h3>
+              <h3>$19</h3>
+            </div>
+            <div class="amount">
+              <h3>Total</h3>
+              <h3>$148.97</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="form__container">
+          <form action="">
+            <div class="form">
+              <h3>Contact Information</h3>
+              <div class="form__group">
+                <label for="email">Email</label>
+                <div class="form__input">
+                  <img src="icons/mail.svg" alt="" />
+                  <input type="email" placeholder="Enter your email..." />
+                </div>
+              </div>
+              <div class="form__group">
+                <label for="phone">Phone</label>
+                <div class="form__input">
+                  <img src="./icons/phone.svg" alt="" />
+                  <input type="number" placeholder="Enter your phone.." />
+                </div>
+              </div>
+            </div>
+            <div class="form shipping__form">
+              <h3>Shipping Address</h3>
+              <div class="form__group">
+                <label for="fullName">Full Name</label>
+                <div class="form__input">
+                  <img src="./icons/user.svg" alt="" />
+                  <input type="text" placeholder="Ram Shrestha" />
+                </div>
+              </div>
+              <div class="form__group">
+                <label for="address">Address</label>
+                <div class="form__input">
+                  <img src="./icons/home.svg" alt="" />
+                  <input type="text" placeholder="Your address.." />
+                </div>
+              </div>
+              <div class="form__group">
+                <label for="city">City</label>
+                <div class="form__input">
+                  <img src="./icons/city.svg" alt="" />
+                  <input type="text" placeholder="Your city..." />
+                </div>
+              </div>
+              <div class="contact__container">
+                <div class="form__group">
+                  <label for="country">Country</label>
+                  <div class="form__input">
+                    <img src="./icons/city.svg" alt="" />
+                    <select name="country" id="" placeholder="Your country">
+                      <option value=""></option>
+                      <option value="">Nepal</option>
+                      <option value="">India</option>
+                      <option value="">China</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <label for="code">Postal Code</label>
+                  <div class="form__input">
+                    <img src="./icons/postal.svg" alt="" />
+                    <input type="text" placeholder="Your postal code..." />
+                  </div>
+                </div>
+              </div>
+              <div class="form__group checkbox__container">
+                <input type="checkbox" id="save" name="save" />
+                <label for="save" id="labelSave"
+                  >Save this information for next time</label
+                >
+              </div>
+            </div>
+            <button class="submit" type="submit">Continue</button>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
